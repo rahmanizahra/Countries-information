@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: rgb(238, 235, 235);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-container {
+    margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    color: rgba(233, 158, 18, 0.979);
+    font-size: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.title2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+    padding: 20px;
+    font-size: 25px;
+    color: rgb(116, 104, 89);
+    border-radius: 30px;
+    border: 2px solid rgb(221, 181, 188);
+    background-color: rgb(250, 247, 243);
+    margin-top: 50px;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: white;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+.main-container {
+    background-color: white;
+    padding: 2rem;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    max-width: 25rem;
+    min-width: 25rem;
+}
+
+.main-container:hover {
+    transform: translate(0, -10px);
+}
+
+.button:hover {
+    transform: translate(0, -3px);
+}
+
+.imag {
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+    max-width: 75%;
+    max-height: 75%;
+    margin: auto;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nameOfCountry {
+    color: orange;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.data {
+    color: rgb(134, 130, 130);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+/* @media (min-width: 600px) {
+    .main-container {
+        width: 90%;
+    }
+} */
+
+.button-part {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.button {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 150px;
+    margin: 20px;
+}
+
+.result-line {
+    color: orange;
+    font-style: italic;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.name-table {
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 21px;
+    padding: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.language-table {
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 24px;
+    padding: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nameOfCountries,
+.nameOfLanguages {
+    margin-left: 150px;
+}
+
+.barChart {
+    display: grid;
+    grid-template-columns: 400px 400px 300px;
+    margin-bottom: 30px;
+    width: 1200px;
+    margin: auto;
+}
+
+.bar {
+    background-color: orange;
+    border-radius: 0.2rem;
+}
+
+.footer {
+    color: #5f5d5d;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
 }
