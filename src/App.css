@@ -40,7 +40,7 @@ body {
     margin-top: 50px;
     background-color: white;
     height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .grid-container {
@@ -51,9 +51,35 @@ body {
     gap: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
     .grid-container {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+    .main-container {
+        margin-bottom: 20px;
+    }
+    .barChart {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media(max-width:1600px) and (min-width:650px) {
+    .grid-container {
+        display: grid;
         grid-template-columns: auto auto;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .barChart {
+        margin: auto;
+        width: 20%;
+    }
+    .button-part {
+        width: 100%;
     }
 }
 
@@ -104,17 +130,11 @@ body {
     margin-left: 20px;
 }
 
-
-/* @media (min-width: 600px) {
-    .main-container {
-        width: 90%;
-    }
-} */
-
 .button-part {
     background-color: white;
     text-align: center;
-    padding: 30px;
+    padding: 40px;
+    border-radius: 5px;
 }
 
 .button {
@@ -141,7 +161,6 @@ h3 {
 
 .name-table {
     margin-top: 30px;
-    margin-left: 70px;
     font-size: 21px;
     padding: 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -149,23 +168,18 @@ h3 {
 
 .language-table {
     margin-top: 30px;
-    margin-left: 70px;
     font-size: 24px;
     padding: 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.nameOfCountries,
-.nameOfLanguages {
-    margin-left: 150px;
 }
 
 .barChart {
     display: grid;
     grid-template-columns: 400px 400px 300px;
     margin-bottom: 30px;
-    width: 1200px;
+    width: 30rem;
     margin: auto;
+    background-color: rgb(238, 235, 235);
 }
 
 .bar {

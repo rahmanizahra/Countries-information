@@ -56,7 +56,7 @@ function App() {
            />
            {isSearched && <h4 className="result-line">{lengthOfResult} satisfied the search criteria</h4> }
         </div>
-        
+     </div>
         <div className='grid-container'>
           {!isSearched ?
           countriesData.map(country => {
@@ -143,7 +143,7 @@ function App() {
                    <h3>Copyright ©2020 30 Days Of React</h3>
                    <h4>Build by <a href="https://github.com/rahmanizahra" target="_blank" rel="noreferrer">Zahra Rahmani</a></h4>
        </footer>   
-  </div>
+  
   </div>
   );
 }
